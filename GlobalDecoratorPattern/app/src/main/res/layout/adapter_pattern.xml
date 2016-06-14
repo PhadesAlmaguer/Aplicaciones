@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multimedia Player"
+            android:textAlignment="center"
+            />
+        <ImageView
+            android:layout_column="1"
+            android:layout_width="100pt"
+            android:layout_height="100pt"
+            android:maxWidth="50pt"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:src="@drawable/audio"
+            android:id="@+id/imgDisc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el ssd de archivo"
+            />
+            <ToggleButton
+                android:textOn="Audio"
+                android:textOff="Video"
+                android:id="@+id/tggformato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduce un formato '.mp4','.mp3','.avi','.vlc' "/>
+            <EditText
+                android:id="@+id/edtformat"
+                android:inputType="textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduce una pista."/>
+            <EditText
+                android:id="@+id/edtname"
+                android:inputType="textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reproducir"
+            android:id="@+id/btnReproducir"/>
+
+</LinearLayout>
